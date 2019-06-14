@@ -1,174 +1,93 @@
 /*---------------- Fonts -------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Baloo+Da&display=swap');
 
+/*------------------------------------------------*/
 html {
     font-family: 'Baloo Da', cursive, sans-serif;
 }
-
-/*---------------- Grid Layout -------------------------*/
-
-body {
-    display: grid;
-    grid-template-rows: 14vh 8vh 85vh 20vh;
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer"
-}
-
-.header {
-    grid-area: header;
-    background: #EFE8E2
-}
-
-.navMenu {
-    grid-area: nav;
-    background: rgb(184, 33, 13)
-}
-
-#main {
-    grid-area: main;
-    background: white;
-}
-
-.footer {
-    grid-area: footer;
-    background: rgb(184, 33, 13)
-}
-
-/* Breakpoint */
-
-@media screen and (max-width: 768px) {
-    body {
-        grid-template-areas: "header" "nav" "main" "footer"
-    }
-}
-
-/*---------------- Layout -------------------------*/
 
 a {
     text-decoration: none
 }
 
-/*---------------- Header -------------------------*/
-
-.headerContent {
-    width: 40vw;
-    height: 100%;
-    margin-left: 60px
-}
-
-.headerFoods, .headerLogo {
-    height: 14vh;
-    width: 7vw;
-    float: left;
-}
-
-.headerFoods h1 {
+h1 {
+    color: rgb(148, 173, 23);
     font-size: 28px;
     font-weight: 900;
-    line-height: 100px;
-    color: rgb(185, 11, 11)
+    letter-spacing: 1px
 }
 
-/*---------------- Nav - Menu --------------------*/
+/*---------------- Header --------------------*/
 
-.menu {
-    width: 30vw;
-    height: 100%;
-    margin-left: 48px
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    background: #820217 
 }
 
-.menu li a {
-    float: left;
-    display: block;
-    width: 25%;
-    text-decoration: none;
+.logo h1 {
+    float: right;
+    line-height: 160px;
     color: white;
-    line-height: 44px;
-    text-align: center;
+    font-size: 40px
 }
 
-.menu li a:hover {
-    color: rgb(216, 238, 17)
+.navHeader {
+    display: flex
+}
+
+.navHeader li {
+    margin-left: 20px;
+}
+
+.navHeader li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    font-size: 20px
+}
+
+.navHeader li a:hover {
+    background: rgb(148, 173, 23);
 }
 
 /*---------------- Main -------------------------*/
 
-/* Banner */
+/* Imagens hamburguer */
 
-
-/* Carousel de imagens hamburguer */
-
-.carouselHamburguer img {
-    float: left;
-    width: 25%;
-    height: 35%
+.sectionHamburguer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto
 }
 
-.carouselHamburguer img:hover {
+.sectionHamburguer > div {
+    flex: 1 1 300px;
+}
+
+.sectionHamburguer img {
+    max-width: 100%;
+    display: block
+}
+
+.sectionHamburguer img:hover {
     opacity: 0.7;
 }
 
-/* Efeito hamburguer preço */
-
-.efeito {
-    opacity: 1;
-    position: relative;
-}
-
-.efeito .boxBlack {
-    position: absolute;
-    width: 25%;
-    height: 0%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    z-index: 1;
-    background-color: #000;
-    transition: all 0.5s ease-in;
-}
-
-.efeito figure {
-    position: relative;
-    width: 450px;
-    height: 316px;
-    vertical-align: middle;
-}
-
-.efeito figcaption {
-    color: #000;
-    position: absolute;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
-    color: #FFF;
-    font-size: 20px;
+/* Informações */
+.info {
     text-align: center;
-    display: block;
-    margin: auto;
-    transform: translateY(0%);
-    transition: all 0.5s ease-in .5s;
-    z-index: 2;
-    width: 25%;
-}
-
-.efeito:hover figure .boxBlack {
-    opacity: 0.5;
-    height: 100%;
-}
-
-.efeito:hover figure figcaption {
-    opacity: 1;
-    bottom: 30px;
-}
-
-/* Descrição do hamburguer */
-
-.descricaoHamburguer {
-    height: 35%;
-    clear: both;
+    margin: 61px
 }
 
 /*---------------- Footer -------------------------*/
-
 .footer {
-    clear: both;
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 100px
 }

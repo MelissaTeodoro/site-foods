@@ -14,7 +14,9 @@ h1 {
     color: rgb(148, 173, 23);
     font-size: 28px;
     font-weight: 900;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 50px
 }
 
 /*---------------- Header --------------------*/
@@ -24,15 +26,19 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5px;
-    background: #820217 
+    background: #af0320 
+}
+
+.logo {
+    margin-left: 65px
 }
 
 .logo h1 {
     float: right;
-    line-height: 160px;
+    line-height: 140px;
     color: white;
-    font-size: 40px
+    font-size: 40px;
+    padding: 0
 }
 
 .navHeader {
@@ -40,7 +46,7 @@ h1 {
 }
 
 .navHeader li {
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navHeader li a {
@@ -56,22 +62,38 @@ h1 {
 
 /*---------------- Main -------------------------*/
 
+main {
+    background: rgb(224, 240, 145);
+}
+
+.carousel {
+    max-width: 1200px;
+    margin: 0px auto
+}
+
+.carousel img {
+    width: 100%;
+    padding: 5px
+}
+
 /* Imagens hamburguer */
 
 .sectionHamburguer {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto
+    margin: 20px auto
 }
 
 .sectionHamburguer > div {
-    flex: 1 1 300px;
+    flex: 1 1 250px;
+    margin: 8px
 }
 
 .sectionHamburguer img {
     max-width: 100%;
-    display: block
+    display: block;
+    border-radius: 8px
 }
 
 .sectionHamburguer img:hover {
@@ -81,7 +103,7 @@ h1 {
 /* Informações */
 .info {
     text-align: center;
-    margin: 61px
+    background: white;
 }
 
 /*---------------- Footer -------------------------*/

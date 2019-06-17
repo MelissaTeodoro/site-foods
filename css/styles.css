@@ -45,7 +45,7 @@ p {
 
 .logo h1 {
     float: right;
-    line-height: 140px;
+    line-height: 130px;
     color: white;
     font-size: 40px;
     padding: 0
@@ -77,9 +77,18 @@ main {
     background: rgb(224, 240, 145);
 }
 
-.carousel img {
-    width: 100%;
-    align-content: center
+section.carousel {
+    width:1200px;
+    height: 575px;
+    position: relative;
+    overflow: hidden
+}
+
+.slides {
+    display: none;
+    width:100%;
+    height: 580px;
+
 }
 
 /* Imagens hamburguer */

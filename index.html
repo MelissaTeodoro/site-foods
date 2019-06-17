@@ -8,13 +8,14 @@
     <title>Food's</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/logo.png" width="150px" alt="Food's">
+                <img src="assets/logo.png" width="150px" alt="Logo Food's">
                 <h1>Food's</h1>
             </a>
         </div>
@@ -30,11 +31,24 @@
 
     <main id="main">
         <section class="carousel">
-            <img src="assets/banner.jpg" alt="Hamburguer">
+            <img src="assets/banner.jpg" alt="Hamburguer-carne">
         </section>
 
         <section class="info">
-            <h1>Hamburger</h1>
+            <h1 class="titulo">Hamburger</h1>
+            <div class="conteudo">
+                <div class="descricao">
+                    <p>O que é Lorem Ipsum?</p><br>
+                    <p>
+                        Lorem Ipsum é simplesmente uma simulação de <br>
+                        texto da indústria tipográfica e de impressos, <br>
+                        e vem sendo utilizado desde o século XVI, quando <br>
+                        um impressor desconhecido pegou uma bandeja de tipos <br>
+                        e os embaralhou para fazer um livro de modelos de tipos. <br>
+                    </p>
+                </div>
+                <img src="assets/burguer-carne-4.jpg" alt="Hamburguer">
+            </div>
         </section>
 
         <section class="sectionHamburguer">
@@ -64,15 +78,54 @@
             </div>
         </section>
 
-        <section>
-            <div class="info">
-                <h1>Hamburguer</h1>
+        <section class="info">
+            <h1 class="titulo">Hamburger</h1>
+            <div class="conteudo">
+                <div class="descricao">
+                    <p>O que é Lorem Ipsum?</p><br>
+                    <p>
+                        Lorem Ipsum é simplesmente uma simulação de <br>
+                        texto da indústria tipográfica e de impressos, <br>
+                        e vem sendo utilizado desde o século XVI, quando <br>
+                        um impressor desconhecido pegou uma bandeja de tipos <br>
+                        e os embaralhou para fazer um livro de modelos de tipos. <br>
+                    </p>
+                </div>
+                <img src="assets/burguer-carne-4.jpg" alt="Hamburguer">
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        Footer
+        <div class="footerContato">
+            <h2>Nosso restaurante</h2>
+            <p>
+                (0xx11) 01234-5678
+            </p>
+            <p>
+                São Paulo, Av. Fictícia, 123, Brasil
+            </p>
+
+            <p>
+                contato@contato.com.br
+            </p>
+            <p>
+                &copy; 2019 Todos os direitos reservados.
+            </p>
+            <p>
+                By Melissa de Miranda Teodoro Soares
+            </p>
+        </div>
+
+        <div class="footerFaleConosco">
+            <form action="">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email"><br><br>
+                <label for="mensagem">Mensagem:</label>
+                <input type="text" id="mensagem" placeholder="Mensagem"><br><br>
+                <input type="button" id="enviae" value="Enviar">
+            </form>
+        </div>
     </footer>
 </body>
 

@@ -6,17 +6,27 @@ html {
     font-family: 'Baloo Da', cursive, sans-serif;
 }
 
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background: white
+}
+
 a {
     text-decoration: none
 }
 
-h1 {
+h1.titulo {
     color: rgb(148, 173, 23);
     font-size: 28px;
     font-weight: 900;
     letter-spacing: 1px;
-    text-align: center;
-    padding: 50px
+    padding: 30px
+}
+
+p {
+    text-align: justify;
+    font-size: 16px
 }
 
 /*---------------- Header --------------------*/
@@ -26,7 +36,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: #af0320 
+    background: #af0320
 }
 
 .logo {
@@ -46,18 +56,19 @@ h1 {
 }
 
 .navHeader li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .navHeader li a {
     display: block;
     color: white;
     padding: 10px;
-    font-size: 20px
+    font-size: 18px
 }
 
 .navHeader li a:hover {
     background: rgb(148, 173, 23);
+    border-radius: 6px
 }
 
 /*---------------- Main -------------------------*/
@@ -66,14 +77,9 @@ main {
     background: rgb(224, 240, 145);
 }
 
-.carousel {
-    max-width: 1200px;
-    margin: 0px auto
-}
-
 .carousel img {
     width: 100%;
-    padding: 5px
+    align-content: center
 }
 
 /* Imagens hamburguer */
@@ -106,10 +112,23 @@ main {
     background: white;
 }
 
+section .conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center
+}
+.conteudo div {
+    margin: 8px
+}
+
 /*---------------- Footer -------------------------*/
 .footer {
     background: black;
     text-align: center;
     color: white;
-    padding: 100px
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }

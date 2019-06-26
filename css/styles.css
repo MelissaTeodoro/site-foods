@@ -133,13 +133,37 @@ section .conteudo {
     flex-wrap: wrap;
     align-items: center
 }
-.conteudo div {
-    margin-left: 95px;
+
+.conteudo > div {
+    margin-left: 175px;
     text-align: center
 }
 
 .descricao {
-    width: 500px
+    width: 500px;
+    height: 250px;
+    line-height: 30px
+}
+
+.preco {
+    color: red;
+    font-size: 40px;
+    margin: 50px  0 56px 0
+}
+
+ a.button {
+    background: rgb(148, 173, 23);
+    color: white;
+    font-size: 17px;
+    padding: 10px 213px;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    top: 26px
+}
+
+a.button:hover {
+    background:  rgb(189, 216, 52);
 }
 
 /*---------------- Footer -------------------------*/
